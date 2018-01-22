@@ -1,7 +1,8 @@
-from Node import Node
+# -*- coding: utf-8 -*-
+from .Node import Node
 
 
-class DoublyLinkedList:
+class DLinkedList:
 	"""
 	Simple doubly linked list implementation with simple API.
 	Currently there is no mechanism to check for duplicated nodes.
@@ -104,17 +105,19 @@ class DoublyLinkedList:
 		return str_format.format(data_str)
 
 if __name__ == '__main__':
-	a = DoublyLinkedList()
-	x = Node('x',2)
-	y = Node('y',3)
-	a.append(x)
-	a.append(y)
-	print(a)
-	a.remove(x)
-	print(a)
-	a.pop()
-	print(len(a))
-	print(a)
-	a.append(y)
-	a.append(x)
+	pass
+	# Simple check
+	# a = DLinkedList()
+	# x = Node('x',2)
+	# y = Node('y',3)
+	# a.append(x)
+	# a.append(y)
+	# print(a)
+	# a.remove(x)
+	# print(a)
+	# a.pop()
+	# print(len(a))
+	# print(a)
+	# a.append(y)
+	# a.append(x)
 	print(a)

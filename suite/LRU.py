@@ -1,12 +1,15 @@
-from Node import Node
-from DoublyLinkedList import DoublyLinkedList
+# -*- coding: utf-8 -*-
+from .Node import Node
+from .DoublyLinkedList import DoublyLinkedList
+
 
 class LRU:
 	"""
 	Assuming that we need to build the LRU using only Python primitives.
 	"""
 	def __init__(self, max_size):
-		# Assert that it needs to be more than 1
+		# Bare minimum checks
+		assert max_size > 0
 		self._max_size = max_size
 		# Hash here for fast key lookup and removal
 		self._lookup = {}
